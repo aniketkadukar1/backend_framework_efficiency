@@ -12,5 +12,5 @@ def remove_duplicate(l1):
             r+=1
     return l1
 
-print(remove_duplicate([2, 3, 7, 4, 2, 1, 6, 8, 5, 7, 4]))
+print(remove_duplicate([2, 2, 3, 7, 4, 2, 1, 6, 8, 5, 7, 4]))
 

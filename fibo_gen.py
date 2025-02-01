@@ -1,11 +1,17 @@
+# def gen(num):
+#     a, b = 0, 1
+#     for i in range(num):
+#         yield a
+#         temp = a
+#         a = b
+#         b = temp + b
+        
 def gen(num):
     a, b = 0, 1
     for i in range(num):
         yield a
-        temp = a
-        a = b
-        b = temp + b
-        
+        a, b = b, a+b
+
 
 g = gen(10)
 
