@@ -15,4 +15,13 @@ for i in range(len(num1)-1, -1, -1):
         carry = 0
         output.append(add)
 output.append(carry)
+
+l = 0
+r = len(output) - 1
+
+while l < r:
+    output[l], output[r] = output[r], output[l]
+    l += 1
+    r -= 1
+
 print(output)
