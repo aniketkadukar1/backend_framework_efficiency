@@ -9,19 +9,12 @@ for i in range(len(num1)-1, -1, -1):
     if add > 9:
         carry = add // 10
         add = add % 10
-        output.append(add)
+        output.insert(0, add)
 
     else:
         carry = 0
-        output.append(add)
-output.append(carry)
+        output.insert(0, add)
+output.insert(0, carry)
 
-l = 0
-r = len(output) - 1
-
-while l < r:
-    output[l], output[r] = output[r], output[l]
-    l += 1
-    r -= 1
 
 print(output)
